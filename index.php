@@ -63,33 +63,14 @@
 </head>
 <body>
     <div class="container">
-        <?php include "menu.php"; ?>
+       
         
         <div class="row" style="padding-top:70px;padding-bottom:70px;">
-            <?php
-                require "dbconnect.php";
-                $sql = "SELECT * FROM portfolio";
-                $result = mysqli_query($conn,$sql);
-                if(mysqli_num_rows($result) > 0){
-                    
-                    while($profile = mysqli_fetch_assoc($result)){
-                        
-                        //echo("<script>alert('profile uploaded successfully');</script>");
-                        $profile_id = $profile['id'];
-                        $profile_img = $profile['image_url'];
-                        $profile_name = $profile['fullname'];
-                        $profile_bio = $profile['bio'];
-                       
-                    }
-                
-                }
-                
-                
-            ?>
+           
             <div class="col-12 col-sm-12 col-md-12 col-lg-4" id="left">
-                <img src="./profile/<?php echo($profile_img);?>" alt="logo" style="width:100px;height:100px;border-radius:50%;margin:0px auto;display:block;">
-                <h3 class="text-center text-uppercase"><?php echo($profile_name); ?></h3>
-                <h6 class="text-center text-uppercase"><?php echo($profile_bio); ?></h6>
+                <img src="intro.jpg" alt="logo" style="width:100px;height:100px;border-radius:50%;margin:0px auto;display:block;">
+                <h3 class="text-center text-uppercase">R S Sekhar</h3>
+                <h6 class="text-center text-uppercase">UI/UX Developer in INDIA</h6>
                 <a href="editprofile.php?id=<?php echo($profile_id);?>" class="btn bg-danger text-white" type="button" data-toggle="modal" data-target="#profileform" style="margin:0px auto;display:block;border:1px solid black;width:50%;">Edit Profile</a>
                 <!-- profile modal -->
                 <div class="modal" id="profileform">
@@ -137,7 +118,7 @@
                         <ul class="navbar-nav" style="text-align:center;text-transform:uppercase;">
                             
                             <li class="nav-item">
-                                <a href="about.php" class="nav-link">About</a>
+                                <a href="#" class="nav-link">About</a>
                             </li>
                             <li class="nav-item">
                                 <a href="#services" class="nav-link">Services</a>
@@ -147,13 +128,13 @@
                             </li>
                             
                             <li class="nav-item">
-                                <a href="dashboard.php" class="nav-link">Work</a>
+                                <a href="#" class="nav-link">Work</a>
                             </li>
                             <li class="nav-item">
-                                <a href="blog.php" class="nav-link">Blog</a>
+                                <a href="#" class="nav-link">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a href="contact.php" class="nav-link">Contact</a>
+                                <a href="#" class="nav-link">Contact</a>
                             </li>
                         </ul>
                     </nav>
@@ -165,10 +146,10 @@
                     <div class="col-12 col-sm-12 col-md-12 col-lg-8 pb-2">
                         <p class="display-4" style="font-weight:600;">I am<br>a Web Developer</p><br>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, molestias?<br> <a href="dashboard.php" class="text-decoration-none">Know More</a></p><br>
-                        <a href="contact.php" class="btn text-decaration-none bg-danger text-white" style="border:0.5px solid black;">Hire Me</a>
+                        <a href="#" class="btn text-decaration-none bg-danger text-white" style="border:0.5px solid black;">Hire Me</a>
                     </div>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-4">
-                        <img src="./images/intro.jpg" alt="intro" style="width:100%;height:100%;">
+                        <img src="intro.jpg" alt="intro" style="width:100%;height:100%;">
                     </div>
                 </div>
                 <!-- skills -->
@@ -289,18 +270,18 @@
                     <div class="row pb-2 bg-info" id="services" style="color:black;">
                         <h3 class="text-center p-2">Services</h3>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-4 pb-2" style="margin-bottom:0px;">
-                            <img src="./images/freelancing.png" class="img-thumbnail"  alt="freelancing" style="width:200px;height:200px;border-radius:50%;display:block;margin:0px auto;padding:10px;">
+                            <img src="freelancing.png" class="img-thumbnail"  alt="freelancing" style="width:200px;height:200px;border-radius:50%;display:block;margin:0px auto;padding:10px;">
                             <p class="text-center">Freelancing</p>   
                         
                         </div>
 
                         <div class="col-12 col-sm-12 col-md-12 col-lg-4 pb-2" style="margin-bottom:0px;">
-                            <img src="./images/reading.png" class="img-thumbnail" alt="learning" style="width:200px;height:200px;border-radius:50%;display:block;margin:0px auto;padding:10px;">
+                            <img src="reading.png" class="img-thumbnail" alt="learning" style="width:200px;height:200px;border-radius:50%;display:block;margin:0px auto;padding:10px;">
                             <p class="text-center">Teaching</p>  
                         
                         </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-4 pb-2" style="margin-bottom:0px;">
-                           <img src="./images/money.jpg" class="img-thumbnail"  alt="money" style="width:200px;height:200px;border-radius:50%;display:block;margin:0px auto;padding:10px;">
+                           <img src="money.jpg" class="img-thumbnail"  alt="money" style="width:200px;height:200px;border-radius:50%;display:block;margin:0px auto;padding:10px;">
                             <p class="text-center">Refer & Earn</p> 
                         
                         </div>
@@ -310,9 +291,6 @@
                     <!-- add new row here -->
             </div>
         </div>
-
-        <?php include "footer.php"; ?>
-
     </div>
 </body>
 </html>
