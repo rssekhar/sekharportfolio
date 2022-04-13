@@ -63,8 +63,7 @@
 </head>
 <body>
     <div class="container">
-        <?php include "menu.php"; ?>
-        
+       
         <div class="row" style="padding-top:70px;padding-bottom:70px;">
             <?php
                 require "dbconnect.php";
@@ -137,7 +136,7 @@
                         <ul class="navbar-nav" style="text-align:center;text-transform:uppercase;">
                             
                             <li class="nav-item">
-                                <a href="about.php" class="nav-link">About</a>
+                                <a href="#about" class="nav-link">About</a>
                             </li>
                             <li class="nav-item">
                                 <a href="#services" class="nav-link">Services</a>
@@ -147,13 +146,13 @@
                             </li>
                             
                             <li class="nav-item">
-                                <a href="dashboard.php" class="nav-link">Work</a>
+                                <a href="#work" class="nav-link">Work</a>
                             </li>
                             <li class="nav-item">
-                                <a href="blog.php" class="nav-link">Blog</a>
+                                <a href="#blog" class="nav-link">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a href="contact.php" class="nav-link">Contact</a>
+                                <a href="#contact" class="nav-link">Contact</a>
                             </li>
                         </ul>
                     </nav>
@@ -310,8 +309,6 @@
                     <!-- add new row here -->
             </div>
         </div>
-
-        <?php include "footer.php"; ?>
 
     </div>
 </body>
