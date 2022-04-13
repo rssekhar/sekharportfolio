@@ -167,7 +167,7 @@
                         <a href="contact.php" class="btn text-decaration-none bg-danger text-white" style="border:0.5px solid black;">Hire Me</a>
                     </div>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-4">
-                        <img src="./images/intro.jpg" alt="intro" style="width:100%;height:100%;">
+                        <img src="intro.jpg" alt="intro" style="width:100%;height:100%;">
                     </div>
                 </div>
                 <!-- skills -->
@@ -288,18 +288,18 @@
                     <div class="row pb-2 bg-info" id="services" style="color:black;">
                         <h3 class="text-center p-2">Services</h3>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-4 pb-2" style="margin-bottom:0px;">
-                            <img src="./images/freelancing.png" class="img-thumbnail"  alt="freelancing" style="width:200px;height:200px;border-radius:50%;display:block;margin:0px auto;padding:10px;">
+                            <img src="freelancing.png" class="img-thumbnail"  alt="freelancing" style="width:200px;height:200px;border-radius:50%;display:block;margin:0px auto;padding:10px;">
                             <p class="text-center">Freelancing</p>   
                         
                         </div>
 
                         <div class="col-12 col-sm-12 col-md-12 col-lg-4 pb-2" style="margin-bottom:0px;">
-                            <img src="./images/reading.png" class="img-thumbnail" alt="learning" style="width:200px;height:200px;border-radius:50%;display:block;margin:0px auto;padding:10px;">
+                            <img src="reading.png" class="img-thumbnail" alt="learning" style="width:200px;height:200px;border-radius:50%;display:block;margin:0px auto;padding:10px;">
                             <p class="text-center">Teaching</p>  
                         
                         </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-4 pb-2" style="margin-bottom:0px;">
-                           <img src="./images/money.jpg" class="img-thumbnail"  alt="money" style="width:200px;height:200px;border-radius:50%;display:block;margin:0px auto;padding:10px;">
+                           <img src="money.jpg" class="img-thumbnail"  alt="money" style="width:200px;height:200px;border-radius:50%;display:block;margin:0px auto;padding:10px;">
                             <p class="text-center">Refer & Earn</p> 
                         
                         </div>
