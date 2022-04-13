@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Sekhar Portfolio</title>
      <!-- Bootstrap 4 cdn links: -->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -65,30 +65,11 @@
     <div class="container">
        
         <div class="row" style="padding-top:70px;padding-bottom:70px;">
-            <?php
-                require "dbconnect.php";
-                $sql = "SELECT * FROM portfolio";
-                $result = mysqli_query($conn,$sql);
-                if(mysqli_num_rows($result) > 0){
-                    
-                    while($profile = mysqli_fetch_assoc($result)){
-                        
-                        //echo("<script>alert('profile uploaded successfully');</script>");
-                        $profile_id = $profile['id'];
-                        $profile_img = $profile['image_url'];
-                        $profile_name = $profile['fullname'];
-                        $profile_bio = $profile['bio'];
-                       
-                    }
-                
-                }
-                
-                
-            ?>
+            
             <div class="col-12 col-sm-12 col-md-12 col-lg-4" id="left">
-                <img src="./profile/<?php echo($profile_img);?>" alt="logo" style="width:100px;height:100px;border-radius:50%;margin:0px auto;display:block;">
-                <h3 class="text-center text-uppercase"><?php echo($profile_name); ?></h3>
-                <h6 class="text-center text-uppercase"><?php echo($profile_bio); ?></h6>
+                <img src="intro.jpg" alt="logo" style="width:100px;height:100px;border-radius:50%;margin:0px auto;display:block;">
+                <h3 class="text-center text-uppercase">R S Sekhar</h3>
+                <h6 class="text-center text-uppercase">UI/UX Developer in INDIA</h6>
                 <a href="editprofile.php?id=<?php echo($profile_id);?>" class="btn bg-danger text-white" type="button" data-toggle="modal" data-target="#profileform" style="margin:0px auto;display:block;border:1px solid black;width:50%;">Edit Profile</a>
                 <!-- profile modal -->
                 <div class="modal" id="profileform">
